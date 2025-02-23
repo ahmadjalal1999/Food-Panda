@@ -1,0 +1,830 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PP Agrandir";
+}
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+/* navbar */
+.pandanav {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 101%;
+  height: 6rem;
+  background: white;
+  z-index: 1000;
+  margin-bottom: -30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pandanav {
+    height: auto;
+  }
+}
+
+.login-btn span,
+.signup-btn span {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.login-btn span {
+  border: 1px solid #000;
+  color: black;
+}
+.login-btn span:hover {
+  background-color: #e7e7e6;
+}
+.signup-btn span {
+  background-color: #ff2b85;
+  color: white;
+}
+.signup-btn span:hover {
+  background-color: #b42460;
+  transform: scale(1.1);
+}
+.bag img {
+  width: 40px;
+  height: 40px;
+}
+.bag:hover {
+  background-color: rgb(220, 220, 220);
+  border-radius: 50%;
+  padding: 5px;
+}
+/* landing page */
+.back-ground {
+  padding: 2px;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+}
+
+.text-area {
+  text-align: left;
+  padding: 10px;
+}
+.text-area h1 {
+  font-family: "PP Agrandir";
+  text-align: left;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.searchArea {
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.find {
+  width: 20%;
+  padding: 6px 6px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff2b85;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.find:hover {
+  background-color: #c21760;
+  transform: scale(1.05);
+}
+
+/*  */
+
+/* cook */
+.cook {
+  position: relative;
+  background: url(./img/home-vendor-pk.jpg) center/cover no-repeat;
+  width: 98vw;
+  height: 70vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 5%;
+  margin-bottom: 15%;
+}
+
+/* FindUsHeading */
+
+#FindUsHeading {
+  margin: 3% 5%;
+
+  font-style: normal;
+  font-weight: 900;
+  color: rgb(51, 51, 51);
+  font-size: 32px;
+  line-height: 42px;
+}
+
+/* Cities Images Area */
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2%;
+  justify-content: center; /* Center the items */
+  margin: 0 auto !important;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8,
+.item9,
+.item10,
+.item11,
+.item12,
+.item13,
+.item14,
+.item15,
+.item16,
+.item17,
+.item18,
+.item19,
+.item20,
+.item21,
+.item22,
+.item23,
+.item24,
+.item25,
+.item26,
+.item27,
+.item28,
+.item29,
+.item30 {
+  position: relative;
+  width: 270px !important; /* Adjust the size as needed */
+  height: 240px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item1::before,
+.item2::before,
+.item3::before,
+.item4::before,
+.item5::before,
+.item6::before,
+.item7::before,
+.item8::before,
+.item9::before,
+.item10::before,
+.item11::before,
+.item12::before,
+.item13::before,
+.item14::before,
+.item15::before,
+.item16::before,
+.item17::before,
+.item18::before,
+.item19::before,
+.item20::before,
+.item21::before,
+.item22::before,
+.item23::before,
+.item24::before,
+.item25::before,
+.item26::before,
+.item27::before,
+.item28::before,
+.item29::before,
+.item30::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.item1::before {
+  background-image: url("./img/city-tile-Abottabad.jpg");
+}
+.item2::before {
+  background-image: url("./img/city-tile-Bahawalpur.jpg");
+}
+.item3::before {
+  background-image: url("./img/city-tile-DeraGhaziKhan.jpg");
+}
+.item4::before {
+  background-image: url("./img/city-tile-Gujranwala.jpg");
+}
+.item5::before {
+  background-image: url("./img/city-tile-Gujrat.jpg.jpg");
+}
+.item6::before {
+  background-image: url("./img/city-tile-Jhelum.jpg");
+}
+.item7::before {
+  background-image: url("./img/city-tile-Kamoke.jpg");
+}
+.item8::before {
+  background-image: url("./img/city-tile-Larkana.jpg");
+}
+.item9::before {
+  background-image: url("./img/city-tile-Mangla.jpg");
+}
+.item10::before {
+  background-image: url("./img/city-tile-Mardan.jpg");
+}
+.item11::before {
+  background-image: url("./img/city-tile-Murree.jpg");
+}
+.item12::before {
+  background-image: url("./img/city-tile-Okara.jpg");
+}
+.item13::before {
+  background-image: url("./img/city-tile-PanoAqil.jpg");
+}
+.item14::before {
+  background-image: url("./img/city-tile-Quetta.jpg");
+}
+.item15::before {
+  background-image: url("./img/city-tile-RahimYarKhan.jpg");
+}
+.item16::before {
+  background-image: url("./img/city-tile-Sadiqabad.jpg");
+}
+.item17::before {
+  background-image: url("./img/city-tile-Sahiwal.jpg");
+}
+.item18::before {
+  background-image: url("./img/city-tile-Sheikhupura.jpg.jpg");
+}
+.item19::before {
+  background-image: url("./img/city-tile-WahhCannt.jpg");
+}
+.item20::before {
+  background-image: url("./img/Faisalabad.jpg");
+}
+.item21::before {
+  background-image: url("./img/Hyderabad.jpg");
+}
+.item22::before {
+  background-image: url("./img/Islamabad.jpg");
+}
+.item23::before {
+  background-image: url("./img/Lahore.jpg");
+}
+.item24::before {
+  background-image: url("./img/Peshawar.jpg");
+}
+.item25::before {
+  background-image: url("./img/Islamabad.jpg");
+}
+.item26::before {
+  background-image: url("./img/Rawalpindi.jpg");
+}
+.item27::before {
+  background-image: url("./img/Sialkot.jpg");
+}
+.item28::before {
+  background-image: url("./img/Sukkur.jpg");
+}
+.item29::before {
+  background-image: url("./img/city-tile-Larkana.jpg");
+}
+.item30::before {
+  background-image: url("./img/Peshawar.jpg");
+}
+
+.item1:hover::before,
+.item2:hover::before,
+.item3:hover::before,
+.item4:hover::before,
+.item5:hover::before,
+.item6:hover::before,
+.item7:hover::before,
+.item8:hover::before,
+.item9:hover::before,
+.item10:hover::before,
+.item11:hover::before,
+.item12:hover::before,
+.item13:hover::before,
+.item14:hover::before,
+.item15:hover::before,
+.item16:hover::before,
+.item17:hover::before,
+.item18:hover::before,
+.item19:hover::before,
+.item20:hover::before,
+.item21:hover::before,
+.item22:hover::before,
+.item23:hover::before,
+.item24:hover::before,
+.item25:hover::before,
+.item26:hover::before,
+.item27:hover::before,
+.item28:hover::before,
+.item29:hover::before,
+.item30:hover::before {
+  transform: scale(1.1); /* Slightly zooms in the background image */
+}
+
+#city {
+  position: absolute;
+  color: #000000;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2px 15px;
+  bottom: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+}
+/* FindUsHeading */
+
+#FindUsHeading {
+  margin-top: 8%;
+}
+
+/* Download */
+
+.Download {
+  position: relative;
+  font: open sans;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 24px;
+  margin: 4% 4%;
+  border-radius: 20px;
+  width: 90%;
+  background-color: #e21b70;
+  color: white;
+  height: 59vh;
+  padding: 0;
+}
+.Download h3 {
+  font: 6em;
+  font-weight: bold;
+  margin-left: 4%;
+  width: 100%;
+  padding-top: 5%;
+}
+.Download .container1 {
+  margin-top: 3%;
+  margin-left: 5%;
+  width: 40%;
+}
+.container1 img {
+  border: 2px solid white;
+  padding: 1.5%;
+  border-radius: 5%;
+  margin-right: 2px;
+}
+
+.Download p {
+  font-weight: bold;
+  max-height: 100%;
+}
+
+#payapp {
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+#payapp img {
+  border: 1px solid white;
+  border-radius: 8%;
+}
+
+.mobile {
+  margin-top: -33%;
+  margin-right: 3%;
+}
+.Download .mobile img {
+  width: 52%;
+  position: relative;
+  margin-bottom: 20%;
+}
+
+/*  */
+.people {
+  position: relative;
+  background: url(./img/home-corporate-pk.jpg) center/cover no-repeat;
+  width: 98vw;
+  height: 70vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 5%;
+  margin-bottom: 15%;
+}
+
+.for-business {
+  background: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 20px 40px;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-bottom: -14%;
+}
+
+.for-business h3 {
+  margin-bottom: 10px;
+}
+
+.for-business p {
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.get-start {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff2b85;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.get-start:hover {
+  background-color: #c21760;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .people {
+    height: 50vh;
+    padding: 3%;
+  }
+
+  .for-business {
+    max-width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .people {
+    height: 40vh;
+  }
+
+  .for-business h3 {
+    font-size: 18px;
+  }
+
+  .for-business p {
+    font-size: 14px;
+  }
+
+  .get-start {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+/* Question/Answers */
+
+.questions {
+  margin: 5% auto;
+  width: 85vw;
+  text-align: left;
+  font-family: Open Sans - 700;
+}
+.questions h1 {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+  line-height: 50px;
+}
+.questions h3 {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+  font-size: 25px;
+  line-height: 45px;
+}
+
+.questions p {
+  font-family: "PP Agrandir", serif;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(81, 81, 81);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.questions ul {
+  color: rgb(81, 81, 81);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.questions ul {
+  border-bottom: 1px solid #e0e0e0;
+  margin: 3% 0;
+}
+.questions a {
+  color: #e83982;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+  text-decoration-line: underline;
+}
+
+.questions a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0px;
+  width: 0;
+  height: 3px;
+  background-color: #e83982;
+  transition: width 0.2s ease;
+}
+
+.questions a:hover::after {
+  width: 100%;
+  color: #e83982;
+}
+
+/* contry */
+.contry {
+  border-top: 1px solid #b5b5b5;
+  border-bottom: 1px solid #bfbfbf;
+  width: 85vw;
+  height: 20vh;
+  margin: 4% auto;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.contry-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Center text inside table cells */
+.contry-table td {
+  padding: 0% 1%;
+  border-left: 1px solid #bbbbbb;
+}
+
+.contry-table td:first-child {
+  border-left: none;
+}
+
+/* Responsive Grid Table */
+@media (max-width: 1200px) {
+  .contry-table td {
+    display: inline-block;
+    width: calc(100% / 8); /* 8 columns */
+  }
+}
+
+@media (max-width: 992px) {
+  .contry-table td {
+    width: calc(100% / 7); /* 7 columns */
+  }
+}
+
+@media (max-width: 768px) {
+  .contry-table td {
+    width: calc(100% / 6); /* 6 columns */
+  }
+}
+
+@media (max-width: 576px) {
+  .contry-table td {
+    width: calc(100% / 4); /* 4 columns */
+  }
+}
+
+@media (max-width: 400px) {
+  .contry-table td {
+    width: calc(100% / 2); /* 2 columns */
+  }
+}
+
+/* Table Links */
+.contry-table a {
+  text-align: center;
+  font-size: large;
+  color: rgb(81, 81, 81);
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+  text-decoration-line: underline;
+}
+
+.contry-table a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0px;
+  width: 0;
+  height: 3px;
+  background-color: rgb(81, 81, 81);
+  transition: width 0.2s ease;
+}
+
+.contry-table a:hover::after {
+  width: 100%;
+  color: rgb(81, 81, 81);
+}
+
+/* footer */
+
+.footer {
+}
+
+.footer-container {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.footer-section {
+  padding: 5px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-align: center;
+  font-size: large;
+  color: rgb(81, 81, 81);
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+  text-decoration-line: underline;
+  line-height: 34px;
+  font-size: 20px;
+
+  font-style: normal;
+}
+
+.footer-section ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0px;
+  width: 0;
+  height: 3px;
+  background-color: rgb(81, 81, 81);
+  transition: width 0.2s ease;
+}
+
+.footer-section ul li a:hover::after {
+  width: 100%;
+  color: rgb(81, 81, 81);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 98%;
+  }
+}
+
+/* footer-2 */
+.footer-2 {
+  border-top: 1px solid #b5b5b5;
+  width: 85vw;
+  height: auto; /* Auto height for responsiveness */
+  margin: 2% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows content to wrap if needed */
+  padding: 10px 0;
+}
+
+.footer-2 img:first-child {
+  flex: 1; /* Allows image to take space on the left */
+  max-width: 150px; /* Set a max width for better control */
+  height: auto;
+  object-fit: contain;
+}
+
+.footer-2 img:last-child {
+  flex: 1;
+  max-width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+.extralogo {
+  max-width: 50px;
+}
+#App-logo {
+  display: flex;
+  gap: 15px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+#App-logo .logos {
+  border: 1px solid #000000;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+#App-logo .logos:hover {
+  background-color: rgb(215, 215, 215);
+  padding: 19px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-2 {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer-2 img {
+    width: 40%; /* Smaller image size on tablets */
+    margin-bottom: 10px;
+  }
+
+  #App-logo {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+/* Fix for Very Small Screens */
+@media (max-width: 500px) {
+  #App-logo {
+    flex-direction: column;
+  }
+
+  .footer-2 img {
+    width: 60%; /* Increase image size for small screens */
+  }
+}
+
+.footer-2 #extralogo {
+  width: 20%; /* Increase image size for small screens */
+}
